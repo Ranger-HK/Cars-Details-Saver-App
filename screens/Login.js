@@ -1,6 +1,6 @@
 import { View,StyleSheet } from 'react-native'
 import React from 'react'
-import {NativeBaseProvider ,Text,VStack,Input,Button,Link,Divider,Image}from 'native-base'
+import {NativeBaseProvider ,Text,VStack,Input,Button,Link,Divider,Image,Avatar}from 'native-base'
 
 export default function Login({navigation}) {
   return (
@@ -41,11 +41,11 @@ export default function Login({navigation}) {
         bg: "muted.50"
       }} />
 
-            <Image  left="75px" bottom="10px" size="50px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" />
-            <Image  left="160px" bottom="56px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" />
-            <Image  left="235px" bottom="102px" size="46px"Thumbnail source= {require('./assets/img/apple-logo.png')} alt="car logo" />
+<Link href='https://www.google.com/'> <Image  left="75px" bottom="10px" size="50px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" /></Link>
+<Link href='www.facebook.com'> <Image  left="160px" bottom="56px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" /></Link>
+<Link href='https://www.apple.com/'>  <Image  left="235px" bottom="102px" size="46px"Thumbnail source= {require('./assets/img/apple-logo.png')} alt="car logo" /></Link>
 
-  
+          
            
     </NativeBaseProvider>
     </View>
