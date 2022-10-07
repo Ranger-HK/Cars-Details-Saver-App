@@ -5,45 +5,48 @@ import {NativeBaseProvider ,Text,VStack,Input,Button,Link,Divider,Image}from 'na
 export default function Login({navigation}) {
   return (
     <View style={styles.container}>
+      
     <NativeBaseProvider>
       
+      
         <VStack space={4} alignItems="center" mt="20%">
-        <Text bottom={50} bold fontSize="6xl" color="#2980b9">Welcome Back</Text>
+        <Text bottom={65} bold fontSize="6xl" color="#16a085">Welcome Back</Text>
+        
         
 
-        <Text top="95px" marginRight="70%" bold fontSize="sm" color="indigo.400">Email</Text>
-        <Input  mt="20%" w="80%" variant="underlined" placeholder="Enter Email" />
-        <Text top="20px" marginRight="65%" bold fontSize="sm" color="indigo.400">Password</Text>
-        <Input w="80%" variant="underlined" placeholder="Enter Password" />
-        <Button mt="5%" w="50%" h="10%" backgroundColor="indigo.600" borderRadius="20" size="sm"onPress={()=>{navigation.navigate("Home")}}>Login</Button>
+        <Text top="100px" marginRight="83%" bold fontSize="sm" color="#079992">Email</Text>
+        <Input  mt="20%" h="40px" w="90%" variant="underlined"  placeholder="Enter Email" />
+        <Text top="30px" marginRight="77%" bold fontSize="sm" color="#079992">Password</Text>
+        <Input w="90%" h="40px" variant="underlined" placeholder="Enter Password" />
+        <Button mt="5%" w="70%" h="10%" backgroundColor="#16a085"  borderRadius="10" size="lg"onPress={()=>{navigation.navigate("Home")}}>LOGIN</Button>
         
            </VStack>
-           <Text top="4px" left="77px" bold fontSize="xs">Don't have an account ?</Text>
+           <Text bottom={"12px"} left="75px" color={"#2f3640"}  bold fontSize="sm">Don't have an account ?</Text>
           
-           <Link href="" bottom="16px" left="218px" bold fontSize="xs" sExternal _text={{
-        color: "indigo.600"}} onPress={()=>{navigation.navigate("Register")}}>
+           <Link href="" bottom="30px" left="200" bold fontSize="xs" sExternal _text={{
+        color: "#079992"}} onPress={()=>{navigation.navigate("Register")}}>
            Register Now!
       </Link>
-      
+     
 
-      <Divider mt="10%" left="40px" w="80px" my="2" _light={{
+      <Divider mt="10%" left="20px" w="80px"  top="5px"  h="2px" my="2" _light={{
         bg: "muted.800"
       }} _dark={{
         bg: "muted.50"
       }} />
-      <Text bottom="19px" left="150px"  fontSize="sm">Or continue with</Text>
+      <Text bottom="19px" left="125px" color={"#1e272e"} fontSize="lg">Or continue with</Text>
 
-      <Divider bottom="35px" left="280px" w="80px" my="2" _light={{
+      <Divider bottom="35px" left="260px" h="2px" w="80px" my="2" _light={{
         bg: "muted.800"
       }} _dark={{
         bg: "muted.50"
       }} />
 
-            <Image  left="90px" bottom="12px" size="50px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" />
-            <Image  left="170px" bottom="59px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" />
-            <Image  left="250px" bottom="106px" size="46px"Thumbnail source= {require('./assets/img/apple-logo.png')} alt="car logo" />
-            <Image  left="250px" bottom="106px" size="46px"Thumbnail source= {require('./assets/img/Login.png')} alt="car logo" />
-
+            <Image  left="75px" bottom="10px" size="50px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" />
+            <Image  left="160px" bottom="56px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" />
+            <Image  left="235px" bottom="102px" size="46px"Thumbnail source= {require('./assets/img/apple-logo.png')} alt="car logo" />
+            {/* <Image  left="0px" bottom="800px" size="300px"Thumbnail source= {require('./assets/img/Login.png')} alt="car logo" /> */}
+           
     </NativeBaseProvider>
     </View>
   )
