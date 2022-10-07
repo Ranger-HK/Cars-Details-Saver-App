@@ -10,8 +10,7 @@ export default function Login({navigation}) {
       
       
         <VStack space={4} alignItems="center" mt="20%">
-        <Text bottom={65} bold fontSize="6xl" color="#16a085">Welcome Back</Text>
-        
+        <Text  bottom={10} bold fontSize="6xl" color="#16a085" underline >Welcome Back</Text>
         
 
         <Text top="100px" marginRight="83%" bold fontSize="sm" color="#079992">Email</Text>
@@ -45,7 +44,8 @@ export default function Login({navigation}) {
             <Image  left="75px" bottom="10px" size="50px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" />
             <Image  left="160px" bottom="56px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" />
             <Image  left="235px" bottom="102px" size="46px"Thumbnail source= {require('./assets/img/apple-logo.png')} alt="car logo" />
-            {/* <Image  left="0px" bottom="800px" size="300px"Thumbnail source= {require('./assets/img/Login.png')} alt="car logo" /> */}
+
+  
            
     </NativeBaseProvider>
     </View>
