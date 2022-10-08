@@ -42,8 +42,8 @@ export default function Login({navigation}) {
       }} />
 
 <Link href='https://www.google.com/'> <Image  left="75px" bottom="10px" size="50px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" /></Link>
-<Link href='www.facebook.com'> <Image  left="160px" bottom="56px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" /></Link>
-<Link href='https://www.apple.com/'>  <Image  left="231px" bottom="100px" size="46px"Thumbnail source= {require('./assets/img/apple-logo.png')} alt="car logo" /></Link>
+<Link href='www.facebook.com'> <Image  left="155px" bottom="56px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" /></Link>
+<Link href='https://github.com/'> <Image borderRadius={"25px"} left="235px" bottom="96px" size="40px"Thumbnail source= {require('./assets/img/git.png')} alt="car logo" /></Link>
 
           
            

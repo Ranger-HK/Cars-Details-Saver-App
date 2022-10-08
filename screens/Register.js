@@ -31,14 +31,14 @@ export default function Register() {
         bg: "muted.50"
       }} />
 
-        <Image  left="80px" bottom="12px" size="50px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" />
-            <Image  left="162px" bottom="59px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" />
-            <Image  left="235px" bottom="103px" size="46px"Thumbnail source= {require('./assets/img/apple-logo.png')} alt="car logo" />
+<Link href='https://www.google.com/'><Image  left="80px" bottom="12px" size="52px"Thumbnail source= {require('./assets/img/google-logo.png')} alt="car logo" /></Link>
+<Link href='www.facebook.com'> <Image  left="158px" bottom="59px" size="40px"Thumbnail source= {require('./assets/img/Facebook-logo.png')} alt="car logo" /></Link>
+<Link href='https://github.com/'> <Image borderRadius={"25px"} left="235px" bottom="99px" size="40px"Thumbnail source= {require('./assets/img/git.png')} alt="car logo" /></Link>
 
             <Text bottom="80px" left="80px" fontSize="sm">By creating an account, you agree to the </Text>
-            <Text bottom="80px" left="40px" color="indigo.600" fontSize="xs">VehicleInfo.com Free Membership Agreement </Text>
-            <Text bottom="97px" left="235px" fontSize="sm">&</Text>
-            <Text bottom="112px" left="250px" color="indigo.600" fontSize="xs">Privacy Policy </Text>
+            <Text bottom="80px" left="75px" color="#16a085" fontSize="xs"> Free Membership Agreement </Text>
+            <Text bottom="97px" left="203px" fontSize="sm">&</Text>
+            <Text bottom="112px" left="218px" color="#16a085" fontSize="xs">Privacy Policy </Text>
             
     </NativeBaseProvider>
     </View>
