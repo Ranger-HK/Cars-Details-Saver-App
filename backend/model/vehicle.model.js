@@ -1,17 +1,17 @@
 const mongoose=require('mongoose');
 
-const user=new mongoose.Schema({
-    userName:{
+const vehicle=new mongoose.Schema({
+    vehicleBrand:{
         type:String,
         required:true
     },
-    email:{
+    vehicleRegistrationNumber:{
         type:String,
         required:true
     },
-    password:{
+    otherDetails :{
         type:String,
         required:true
     }
 });
-module.exports=mongoose.model('User',user);
+module.exports=mongoose.model('Vehicle',vehicle);
