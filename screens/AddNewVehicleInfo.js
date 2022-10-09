@@ -33,6 +33,14 @@ export default function AddNewVehicleInfo({navigation}) {
     .catch((err)=>{Alert.alert("Error occured !")})
   }
 
+  const clear=()=>{
+    setvehicleBrandNmae ('')
+    setregisterNumber('')
+    setotherDeatils('')
+   
+    
+  }
+  
   return (
     <View style={styles.container}>
     <NativeBaseProvider>
@@ -68,7 +76,10 @@ export default function AddNewVehicleInfo({navigation}) {
                }} />
       
       
-       <Button top="22px" mt="0%" w="50%" h="8%" backgroundColor="#16a085" borderRadius="10" size="lg" onPress={saveData}>Save</Button>
+       <Button top="22px" mt="0%" w="50%" h="8%" backgroundColor="#16a085" borderRadius="10" size="lg" onPress={(e)=>{
+                                saveData()
+                                clear()
+                              }}>Save</Button>
     
     </VStack>
      </NativeBaseProvider> 
